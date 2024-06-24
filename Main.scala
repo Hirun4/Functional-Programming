@@ -1,52 +1,31 @@
-object Pr2Part1 {
+object Practical2Part2 {
   def main(args: Array[String]): Unit = {
 
-    var i, j, k = 2
-    val m, n = 5
-    val f = 12.0f
-    val g = 4.0f
-    val c = 'X'
+    var a = 2
+    var b = 3
+    var c = 4
+    var d = 5
+    val k = 4.3f
+    val g = 0.0f
 
 
-    // a) k + 12 * m
-    val resultA = k + 12 * m
-    println(s"a) k + 12 * m = $resultA")
+    // a) println( - -b * a + c * d - -)
+    println(s"a) ${(-(-b)) * a + c * d}")
 
-    // b) m / j
-    val resultB = m / j
-    println(s"b) m / j = $resultB")
+    // b) println(a++)
+    println(s"b) $a")
+    a += 1
 
-    // c) n % j
-    val resultC = n % j
-    println(s"c) n % j = $resultC")
+    // c) println (–2 * ( g – k ) +c)
+    println(s"c) ${-2 * (g - k) + c}")
 
-    // d) m / j * j
-    val resultD = m / j * j
-    println(s"d) m / j * j = $resultD")
+    // d) println (c=c++)
+    c += 1
+    println(s"d) $c")
 
-    // e) f + 10 * 5 + g
-    val resultE = f + 10 * 5 + g
-    println(s"e) f + 10 * 5 + g = $resultE")
-
-    // f) ++i * n
-    i += 1
-    val resultF = i * n
-    println(s"f) ++i * n = $resultF")
-
-
+    // e) println (c=++c*a++)
+    c = (c + 1) * a
+    println(s"e) $c")
+    a += 1
   }
 }
-
-
-/*
-Comparison of Java and Scala
-
-Syntax: Scala is more concise than Java. It allows for more expressive code.
-  Type Inference: Scala can infer types, reducing boilerplate code. Java requires explicit type declarations.
-Functional Programming: Scala integrates functional programming paradigms more naturally than Java.
-Immutability: Scala encourages immutability and immutable data structures.
-  Concurrency: Scala has better concurrency support with Akka and Futures.
-Interoperability: Both languages run on the JVM and can interoperate, but Scala offers more syntactic sugar for functional constructs.
-
-
- */
